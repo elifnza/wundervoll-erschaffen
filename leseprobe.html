@@ -50,16 +50,15 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:'Lora',Georgi
 .peek li:last-child{border-bottom:0;}
 .peek li::before{content:"\2713";position:absolute;left:4px;top:9px;color:var(--gold);font-weight:700;}
 
-/* CTA */
+/* CTA / Form */
 .cta-box{text-align:center;padding:8px 0 46px;}
-.cta{display:inline-block;font-family:'Poppins',sans-serif;font-weight:600;font-size:17px;color:#fff;
-  background:var(--gold);text-decoration:none;padding:17px 40px;border-radius:999px;
-  box-shadow:0 12px 28px rgba(197,148,74,.32);transition:background .15s;}
-.cta:hover{background:var(--gold-d);}
-.cta-note{font-family:'Poppins',sans-serif;font-size:13.5px;color:var(--subtle);margin-top:14px;}
+.form-card{max-width:540px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:18px;
+  padding:10px;box-shadow:0 14px 34px rgba(27,79,90,.10);overflow:hidden;}
+.form-card iframe{display:block;width:100%;max-width:540px;height:305px;border:0;margin:0 auto;}
 .steps{font-family:'Poppins',sans-serif;font-size:13.5px;color:var(--subtle);max-width:420px;
   margin:22px auto 0;line-height:1.9;}
 .steps b{color:var(--teal);}
+@media(max-width:420px){ .form-card iframe{height:340px;} }
 
 footer{background:var(--teal-d);color:#9FC4C9;padding:34px 0;font-family:'Poppins',sans-serif;
   font-size:13.5px;text-align:center;}
@@ -105,10 +104,9 @@ footer .fine{font-size:12px;color:#6f979d;margin-top:12px;line-height:1.6;}
 </section>
 
 <div class="cta-box">
-  <a class="cta" href="https://0faa42cb.sibforms.com/serve/MUIFAOXMxbfN9XVYu1w16cZXCKYqp7vfiKkLkqBLzNZ9u-T5Gfx1AkBlG2g0A-ma3vnZ_mMp_Cgz7w_OJP1uWh4V2WL5jgrlypxnkLQ1uzY_xqvycbtH-jk9vg5DlqCuhFPhAPJeg35I0BnoSSxYreGy9FHkLHI1tRzBfaZ0M8F68OocgLupkL1tUi6EFkmGL7NHhIF_RLPvseL1Yw==" target="_blank" rel="noopener">
-    Ja, schick mir die Leseprobe &rarr;
-  </a>
-  <p class="cta-note">Kostenlos &middot; jederzeit abbestellbar</p>
+  <div class="form-card">
+    <iframe width="540" height="305" src="https://0faa42cb.sibforms.com/v2/serve/MUIFAOXMxbfN9XVYu1w16cZXCKYqp7vfiKkLkqBLzNZ9u-T5Gfx1AkBlG2g0A-ma3vnZ_mMp_Cgz7w_OJP1uWh4V2WL5jgrlypxnkLQ1uzY_xqvycbtH-jk9vg5DlqCuhFPhAPJeg35I0BnoSSxYreGy9FHkLHI1tRzBfaZ0M8F68OocgLupkL1tUi6EFkmGL7NHhIF_RLPvseL1Yw==" frameborder="0" scrolling="no" allowfullscreen></iframe>
+  </div>
 
   <div class="steps">
     <b>So funktioniert&rsquo;s:</b><br>
