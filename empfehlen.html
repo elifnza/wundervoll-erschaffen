@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empfehlen &amp; verdienen – Wundervoll erschaffen</title>
+<meta name="description" content="Empfiehl das Buch „Wundervoll erschaffen“ weiter und verdiene an jeder Empfehlung mit – 50 % von jedem Verkauf. Ganz ohne Vorkenntnisse.">
+<style>
+  :root{
+    --teal:#1B4F5A;
+    --mid-teal:#2D7A8A;
+    --gold:#C5944A;
+    --gold-soft:#E4C489;
+    --ink:#1A2B2E;
+    --muted:#5C8A90;
+    --card:#E8F4F6;
+    --line:#D5E6E9;
+    --white:#FFFFFF;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0;}
+
+  html{scroll-behavior:smooth;}
+
+  body{
+    font-family:Calibri,"Segoe UI",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.65;
+    font-size:18px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.serif{
+    font-family:Cambria,Georgia,"Times New Roman",serif;
+    font-weight:700;
+    line-height:1.2;
+    color:var(--teal);
+    letter-spacing:.2px;
+  }
+
+  p{margin-bottom:1em;}
+  strong{color:var(--teal);}
+
+  .wrap{width:100%;max-width:720px;margin:0 auto;padding:0 24px;}
+
+  /* --- decorative gold rule --- */
+  .ornament{
+    display:flex;align-items:center;justify-content:center;
+    gap:14px;margin:0 auto 8px;color:var(--gold);
+  }
+  .ornament::before,.ornament::after{
+    content:"";height:1px;width:46px;
+    background:linear-gradient(90deg,transparent,var(--gold));
+  }
+  .ornament::after{background:linear-gradient(90deg,var(--gold),transparent);}
+  .ornament span{font-size:20px;line-height:1;}
+
+  .eyebrow{
+    font-family:Cambria,Georgia,serif;
+    font-style:italic;
+    color:var(--gold);
+    font-size:18px;
+    letter-spacing:.4px;
+    text-align:center;
+    margin-bottom:14px;
+  }
+
+  /* --- hero --- */
+  .hero{
+    background:var(--teal);
+    color:var(--white);
+    padding:70px 0 76px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero::before,.hero::after{
+    content:"";position:absolute;border-radius:50%;
+    background:var(--mid-teal);opacity:.28;
+  }
+  .hero::before{width:280px;height:280px;top:-120px;right:-90px;}
+  .hero::after{width:200px;height:200px;bottom:-110px;left:-70px;}
+  .hero .wrap{position:relative;z-index:1;text-align:center;}
+  .hero .eyebrow{color:var(--gold-soft);}
+  .hero .ornament{color:var(--gold-soft);}
+  .hero .ornament::before{background:linear-gradient(90deg,transparent,var(--gold-soft));}
+  .hero .ornament::after{background:linear-gradient(90deg,var(--gold-soft),transparent);}
+  .hero h1{
+    color:var(--white);
+    font-size:2.35rem;
+    margin-bottom:22px;
+  }
+  .hero p.lead{
+    color:#E7F1F2;
+    font-size:1.18rem;
+    max-width:560px;margin:0 auto 32px;
+  }
+  .hero .fifty{color:var(--gold-soft);font-weight:700;white-space:nowrap;}
+
+  /* --- buttons --- */
+  .btn{
+    display:inline-block;
+    font-family:Calibri,"Segoe UI",sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    text-decoration:none;
+    padding:16px 38px;
+    border-radius:40px;
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+    cursor:pointer;
+    border:none;
+  }
+  .btn-gold{
+    background:var(--gold);color:var(--teal);
+    box-shadow:0 6px 20px rgba(197,148,74,.35);
+  }
+  .btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(197,148,74,.45);}
+  .btn-ghost{
+    background:transparent;color:var(--white);
+    border:1.5px solid rgba(255,255,255,.5);
+    padding:14px 30px;font-size:.98rem;
+  }
+  .btn-ghost:hover{background:rgba(255,255,255,.1);}
+  .hero .btn-row{display:flex;flex-direction:column;gap:14px;align-items:center;}
+
+  /* --- sections --- */
+  section{padding:64px 0;}
+  section.tint{background:var(--card);}
+  .section-head{text-align:center;margin-bottom:40px;}
+  .section-head h2{font-size:1.9rem;margin-bottom:10px;}
+  .section-head p{color:var(--muted);max-width:520px;margin:0 auto;}
+
+  /* --- simple steps (how it works) --- */
+  .flow{display:flex;flex-direction:column;gap:18px;}
+  .flow-item{
+    display:flex;gap:18px;align-items:flex-start;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:22px 24px;
+    box-shadow:0 4px 14px rgba(27,79,90,.05);
+  }
+  section.tint .flow-item{background:var(--white);}
+  .flow-num{
+    flex:0 0 auto;
+    width:44px;height:44px;border-radius:50%;
+    background:var(--teal);color:var(--gold-soft);
+    display:flex;align-items:center;justify-content:center;
+    font-family:Cambria,Georgia,serif;font-weight:700;font-size:1.3rem;
+  }
+  .flow-item p{margin:0;}
+  .flow-item .t{font-weight:700;color:var(--teal);display:block;margin-bottom:2px;}
+
+  .note{
+    text-align:center;color:var(--muted);font-style:italic;
+    margin-top:26px;font-size:1.05rem;
+  }
+
+  /* --- highlight (50%) --- */
+  .fifty-card{
+    background:var(--teal);color:var(--white);
+    border-radius:22px;
+    padding:40px 30px;text-align:center;
+    position:relative;overflow:hidden;
+  }
+  .fifty-card .big{
+    font-family:Cambria,Georgia,serif;font-weight:700;
+    font-size:4rem;color:var(--gold-soft);line-height:1;
+    margin-bottom:6px;
+  }
+  .fifty-card .big small{font-size:1.6rem;}
+  .fifty-card p{color:#E7F1F2;margin:0 auto;max-width:460px;}
+  .fifty-card .example{
+    margin-top:24px;padding-top:22px;
+    border-top:1px solid rgba(255,255,255,.18);
+    font-size:1.02rem;
+  }
+  .fifty-card .example b{color:var(--gold-soft);}
+
+  /* --- two audiences --- */
+  .cards{display:flex;flex-direction:column;gap:20px;}
+  .aud{
+    background:var(--white);border:1px solid var(--line);
+    border-radius:18px;padding:28px 26px;
+    box-shadow:0 4px 14px rgba(27,79,90,.05);
+  }
+  .aud .ico{font-size:1.7rem;margin-bottom:12px;display:block;}
+  .aud h3{font-size:1.25rem;margin-bottom:8px;}
+  .aud p{margin:0;color:#33474b;}
+
+  /* --- why / letter --- */
+  .letter{
+    background:var(--white);
+    border-left:3px solid var(--gold);
+    padding:8px 4px 8px 28px;
+    max-width:600px;margin:0 auto;
+  }
+  .letter p{font-size:1.1rem;color:#2b3f43;}
+  .letter .sign{
+    font-family:Cambria,Georgia,serif;font-style:italic;
+    color:var(--teal);font-size:1.15rem;margin-top:4px;
+  }
+
+  /* --- faq --- */
+  .faq{max-width:640px;margin:0 auto;}
+  details{
+    border-bottom:1px solid var(--line);
+    padding:6px 0;
+  }
+  details summary{
+    list-style:none;cursor:pointer;
+    padding:16px 4px;
+    font-family:Cambria,Georgia,serif;font-weight:700;
+    color:var(--teal);font-size:1.12rem;
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{
+    content:"+";color:var(--gold);font-size:1.5rem;
+    font-family:Calibri,sans-serif;transition:transform .2s ease;
+  }
+  details[open] summary::after{content:"–";}
+  details .a{padding:0 4px 18px;color:#33474b;}
+
+  /* --- final CTA --- */
+  .final{
+    background:var(--teal);color:var(--white);
+    text-align:center;padding:72px 0;
+  }
+  .final h2{color:var(--white);font-size:2rem;margin-bottom:16px;}
+  .final p{color:#E7F1F2;max-width:500px;margin:0 auto 30px;}
+  .final .personal{
+    margin-top:32px;font-size:1rem;color:#CFE2E4;
+  }
+  .final .personal a{color:var(--gold-soft);text-decoration:none;font-weight:700;}
+  .final .personal a:hover{text-decoration:underline;}
+
+  /* --- footer --- */
+  footer{
+    background:#123a43;color:#9fc0c5;
+    text-align:center;padding:34px 0;font-size:.92rem;
+  }
+  footer a{color:#9fc0c5;text-decoration:none;margin:0 8px;}
+  footer a:hover{color:var(--gold-soft);}
+  footer .name{color:#cfe2e4;font-family:Cambria,Georgia,serif;font-size:1.05rem;margin-bottom:6px;}
+
+  /* --- reveal animation --- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .reveal{opacity:1;transform:none;transition:none;}
+    .btn{transition:none;}
+  }
+
+  /* --- larger screens --- */
+  @media(min-width:640px){
+    .hero h1{font-size:2.9rem;}
+    .hero .btn-row{flex-direction:row;justify-content:center;}
+    .cards{flex-direction:row;}
+    .aud{flex:1;}
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Das Empfehlungsprogramm zum Buch „Wundervoll erschaffen“</div>
+      <h1>Empfiehl mein Buch weiter&nbsp;– und verdiene daran mit.</h1>
+      <p class="lead">
+        Jedes Mal, wenn eine Schwester das Buch über deine Empfehlung kauft,
+        bekommst du <span class="fifty">50&nbsp;% des Verkaufspreises.</span>
+        Ohne Kosten, ohne Risiko, ohne Vorkenntnisse. Wie das geht? Ich erklär&rsquo;s dir.
+      </p>
+      <div class="btn-row">
+        <a href="#starten" class="btn btn-gold">Partnerin werden</a>
+        <a href="#einfach" class="btn btn-ghost">So funktioniert&rsquo;s</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTRO: what is this about -->
+  <section id="worum">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament"><span>&#10022;</span></div>
+        <h2>Worum geht es hier?</h2>
+      </div>
+      <div class="letter reveal">
+        <p>Kennst du das? Du entdeckst etwas, das dir wirklich hilft – ein Buch, ein Produkt,
+           ein Wissen – und erzählst sofort deiner besten Freundin davon. Deiner Schwester.
+           Den Frauen in deiner Gruppe. Einfach, weil du willst, dass es ihnen auch hilft.</p>
+        <p>Das machst du sowieso schon. Jeden Tag. Kostenlos.</p>
+        <p>Und genau darum geht es hier: Wenn du mein Buch <strong>„Wundervoll erschaffen“</strong>
+           weiterempfiehlst und eine Schwester es daraufhin kauft, bekommst
+           <strong>du die Hälfte des Verkaufspreises</strong>. Als Dankeschön dafür, dass du
+           dieses Wissen weiterträgst.</p>
+        <p>Du musst nichts verkaufen, niemanden überreden und nichts können, was du nicht
+           schon kannst. Du empfiehlst – so wie immer. Nur dass du diesmal etwas
+           zurückbekommst.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT IS IT -->
+  <section id="einfach" class="tint">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament"><span>&#10022;</span></div>
+        <h2>Und so funktioniert es</h2>
+        <p>Vielleicht hast du sowas noch nie gemacht – das macht gar nichts.
+           Es sind nur drei Schritte:</p>
+      </div>
+      <div class="flow">
+        <div class="flow-item reveal">
+          <div class="flow-num">1</div>
+          <p><span class="t">Du bekommst deinen eigenen Link</span>
+             Einen persönlichen Empfehlungs-Link und einen Rabattcode – nur für dich.</p>
+        </div>
+        <div class="flow-item reveal">
+          <div class="flow-num">2</div>
+          <p><span class="t">Eine Schwester kauft darüber</span>
+             Sie klickt auf deinen Link und holt sich das Buch.</p>
+        </div>
+        <div class="flow-item reveal">
+          <div class="flow-num">3</div>
+          <p><span class="t">Du bekommst die Hälfte</span>
+             50&nbsp;% des Preises gehören dir – ganz automatisch.</p>
+        </div>
+      </div>
+      <p class="note reveal">Es kostet dich keinen Cent. Und die Käuferin zahlt keinen Euro mehr.</p>
+    </div>
+  </section>
+
+  <!-- 50% -->
+  <section>
+    <div class="wrap">
+      <div class="fifty-card reveal">
+        <div class="big">50<small>&#8201;%</small></div>
+        <p>Von jedem Verkauf, der über dich zustande kommt, gehört die Hälfte dir.
+           Kein Kleingedrucktes, keine versteckten Bedingungen.</p>
+        <div class="example">
+          Beispiel: Kostet das Buch <b>__&#8201;€</b>, bekommst du bei jedem Verkauf
+          <b>__&#8201;€</b>. Empfiehlst du es zehn Schwestern, die es kaufen,
+          ist das ein schöner Nebenverdienst&nbsp;– für etwas, das du sowieso gern teilst.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO IS IT FOR -->
+  <section class="tint">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament"><span>&#10022;</span></div>
+        <h2>Ist das etwas für mich?</h2>
+        <p>Ja – wahrscheinlich schon. Du gehörst bestimmt zu einer dieser beiden:</p>
+      </div>
+      <div class="cards">
+        <div class="aud reveal">
+          <span class="ico">&#128241;</span>
+          <h3>Du bist online sichtbar</h3>
+          <p>Du hast einen Account, eine Gruppe, einen WhatsApp-Status. Auch mit kleiner
+             Reichweite: ein Reel, eine Story, ein ehrlicher Beitrag – das reicht schon.</p>
+        </div>
+        <div class="aud reveal">
+          <span class="ico">&#129309;</span>
+          <h3>Du kennst viele Menschen</h3>
+          <p>Freundinnen, Familie, dein Kurs, die Frauen in der Moschee. Manchmal ist ein
+             persönliches Wort mehr wert als zehntausend Follower.</p>
+        </div>
+      </div>
+      <p class="note reveal">Du brauchst keine große Reichweite, keine Kamera, kein Gesicht.
+         Nur Menschen, denen du etwas Gutes wünschst.</p>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament"><span>&#10022;</span></div>
+        <h2>Warum ich mir das wünsche</h2>
+      </div>
+      <div class="letter reveal">
+        <p>Dieses Buch ist entstanden, damit Frauen ihren Körper verstehen – so, wie Allah
+           ihn erschaffen hat. Jede, die es liest, trägt dieses Wissen weiter: in ihre Ehe,
+           ihre Mutterschaft, ihr Leben.</p>
+        <p>Wenn du hilfst, dass es eine weitere Schwester erreicht, gibst du etwas Nützliches
+           weiter. Und dafür sollst du auch etwas zurückbekommen – ehrlich und offen, ganz
+           ohne jemanden überreden zu müssen.</p>
+        <p class="sign">– Elif</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO START -->
+  <section id="starten" class="tint">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament"><span>&#10022;</span></div>
+        <h2>So fängst du an</h2>
+        <p>Drei Schritte, und du bist dabei. Zusammen unter fünf Minuten.</p>
+      </div>
+      <div class="flow">
+        <div class="flow-item reveal">
+          <div class="flow-num">1</div>
+          <p><span class="t">Kostenlos anmelden</span>
+             Über den Button unten. Du legst in wenigen Minuten ein kostenloses Konto an.</p>
+        </div>
+        <div class="flow-item reveal">
+          <div class="flow-num">2</div>
+          <p><span class="t">Deinen Link erhalten</span>
+             Du bekommst deinen persönlichen Empfehlungs-Link und deinen Rabattcode.</p>
+        </div>
+        <div class="flow-item reveal">
+          <div class="flow-num">3</div>
+          <p><span class="t">Teilen &amp; verdienen</span>
+             Poste ihn in einem Reel, einer Story oder schick ihn per WhatsApp. Fertig.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px;" class="reveal">
+        <!-- TODO: href durch deinen Digistore-Affiliate-Anmeldelink ersetzen -->
+        <a href="https://www.digistore24.com/signup/710361,711196,711197/" class="btn btn-gold" target="_blank" rel="noopener">Jetzt kostenlos anmelden</a>
+        <p style="margin-top:16px;font-size:1rem;">
+          <a href="partnerin-werden.html" style="color:var(--mid-teal);font-weight:700;">
+            &rarr; Ich zeige dir jeden Schritt: Zur ausführlichen Anleitung</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="ornament"><span>&#10022;</span></div>
+        <h2>Deine Fragen</h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>Kostet mich die Teilnahme etwas?</summary>
+          <div class="a">Nein. Die Anmeldung ist komplett kostenlos, es gibt kein Risiko und
+             keine Verpflichtung. Du kannst jederzeit aufhören.</div>
+        </details>
+        <details>
+          <summary>Brauche ich viele Follower?</summary>
+          <div class="a">Nein. Auch kleine Accounts und ganz persönliche Empfehlungen im Alltag
+             funktionieren. Es geht um Vertrauen, nicht um Zahlen.</div>
+        </details>
+        <details>
+          <summary>Wie und wann bekomme ich mein Geld?</summary>
+          <div class="a">Die gesamte Abwicklung läuft sicher über Digistore24. Dein Verdienst
+             wird dir dort zuverlässig ausgezahlt – du musst dich um nichts kümmern.</div>
+        </details>
+        <details>
+          <summary>Muss ich mich mit Technik auskennen?</summary>
+          <div class="a">Nein. Du bekommst einen fertigen Link zum Kopieren. Und für die
+             Anmeldung habe ich dir <a href="partnerin-werden.html"
+             style="color:var(--mid-teal);font-weight:700;">eine Schritt-für-Schritt-Anleitung</a>
+             geschrieben – jeder Klick erklärt.</div>
+        </details>
+        <details>
+          <summary>Was ist mit Steuern und Anmeldung?</summary>
+          <div class="a">Für die Auszahlung trägst du bei Digistore24 einfach deine
+             <strong>private Steuernummer</strong> ein – mehr verlangt die Plattform nicht.
+             Ganz ehrlich dazu: Wer regelmäßig empfiehlt, um etwas zu verdienen, muss in
+             Deutschland rechtlich ein <strong>Kleingewerbe</strong> anmelden (Gewerbeamt,
+             danach ELSTER) – das ist schnell erledigt, und mit der
+             <strong>Kleinunternehmerregelung</strong> fällt dabei
+             <strong>keine Umsatzsteuer</strong> an. Bei kleinen Nebeneinnahmen bleibt je
+             nach deiner persönlichen Situation oft wenig bis gar keine Steuer übrig –
+             wie es bei dir genau aussieht, hängt von deinem übrigen Einkommen ab,
+             informiere dich dazu bitte selbst. In der <a href="partnerin-werden.html"
+             style="color:var(--mid-teal);font-weight:700;">Schritt-für-Schritt-Anleitung</a>
+             erkläre ich dir alles genau. Lass dich davon nicht abschrecken: Tausende
+             Frauen machen das ganz unkompliziert nebenbei.</div>
+        </details>
+        <details>
+          <summary>Ist das erlaubt?</summary>
+          <div class="a">Du empfiehlst nur ehrlich das weiter, was dir selbst geholfen hat –
+             ohne Druck und ohne falsche Versprechen. Eine aufrichtige Empfehlung ist etwas Gutes.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final">
+    <div class="wrap reveal">
+      <div class="ornament" style="color:var(--gold-soft)"><span>&#10022;</span></div>
+      <h2>Bereit, es weiterzugeben?</h2>
+      <p>Trag das Wissen weiter, das dir selbst gutgetan hat – und verdiene an jeder
+         Empfehlung mit.</p>
+      <!-- TODO: href durch deinen Digistore-Affiliate-Anmeldelink ersetzen -->
+      <a href="https://www.digistore24.com/signup/710361,711196,711197/" class="btn btn-gold" target="_blank" rel="noopener">Jetzt Partnerin werden</a>
+      <p class="personal">
+        Du hast eine größere Reichweite und möchtest enger zusammenarbeiten?<br>
+        Schreib mir persönlich: <a href="mailto:kontakt@wundervoll-erschaffen.de">kontakt@wundervoll-erschaffen.de</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="name">Wundervoll erschaffen</div>
+      <div>
+        <a href="index.html">Startseite</a> ·
+        <a href="partnerin-werden.html">Anleitung</a> ·
+        <a href="impressum.html">Impressum</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+      <p style="margin-top:14px;opacity:.7;">© 2026 Elif Karacabey</p>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var els = document.querySelectorAll('.reveal');
+      if(!('IntersectionObserver' in window)){
+        els.forEach(function(e){e.classList.add('in');});
+        return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      },{threshold:.12});
+      els.forEach(function(e){io.observe(e);});
+    })();
+  </script>
+
+</body>
+</html>
