@@ -61,7 +61,9 @@ h1{font-family:'Corinthia',cursive;font-weight:400;color:#ffffff;font-size:clamp
   border-color:rgba(231,200,137,.30);
   box-shadow:0 12px 30px rgba(197,148,74,.25);}
 .lnk.hero .t{color:#ffffff;} .lnk.hero .s{color:#DCEBED;}
-.lnk.hero .ic{background:rgba(231,200,137,.20);color:#E7C889;border-color:rgba(231,200,137,.45);}
+.lnk.hero .ic{display:block;flex:0 0 48px;width:48px;height:60px;padding:0;line-height:0;
+  background:transparent;border:1px solid rgba(231,200,137,.5);border-radius:10px;overflow:hidden;}
+.lnk.hero .ic img{width:100%;height:100%;object-fit:cover;object-position:50% 44%;display:block;}
 .lnk.hero .ar{color:#E7C889;opacity:.95;}
 .lnk.hero:hover{background:linear-gradient(135deg,#37909f,#296975);}
 
@@ -97,7 +99,7 @@ footer a:hover{color:#fff;text-decoration:underline;}
   <div class="links">
 
     <a class="lnk hero" href="./index.html">
-      <span class="ic">&#10040;</span>
+      <span class="ic"><img src="./buecher2.jpg" alt="Die zwei Bücher „Wundervoll erschaffen“"></span>
       <span class="tx">
         <span class="t">Wundervoll erschaffen</span>
         <span class="s">Zykluswissen &amp; natürliche Verhütung &ndash; die zwei Bücher</span>
