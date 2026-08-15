@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halal Einkommen von zuhause aufbauen | Wundervoll erschaffen</title>
+<meta name="description" content="Ein halal Einkommen von zuhause aufbauen: Aufgaben, Rahmen, Anforderungen und Verdienst im Überblick – für Schwestern, die kein Büro und keine Fremdbetreuung wollen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --teal:#1B4F5A;
+    --teal-tief:#12363E;
+    --gold:#C5944A;
+    --papier:#FBF8F3;
+    --karte:#FFFFFF;
+    --linie:#E4DCCF;
+    --text:#2C2A27;
+    --grau:#6B6660;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--papier);
+    color:var(--text);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-size:17px;
+    line-height:1.72;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px;}
+
+  /* Kopf */
+  header{background:var(--teal);color:#fff;padding:24px 0;}
+  .marke{font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;letter-spacing:.02em;}
+  .marke b{font-weight:600;}
+
+  /* Hero */
+  .hero{padding:46px 0 8px;}
+  .eyebrow{
+    font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--gold);font-weight:600;margin-bottom:16px;
+  }
+  h1{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-weight:500;font-size:40px;line-height:1.14;margin:0 0 16px;color:var(--teal-tief);
+  }
+  h1 em{font-style:italic;color:var(--gold);}
+  .sub{font-size:18px;color:var(--grau);margin:0 0 4px;}
+
+  h2{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-weight:600;font-size:29px;line-height:1.2;color:var(--teal-tief);
+    margin:46px 0 14px;
+  }
+  h2 span{display:block;color:var(--gold);font-family:'Inter',sans-serif;font-size:12.5px;
+    font-weight:600;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;}
+  p{margin:0 0 16px;}
+
+  /* Stellenprofil-Tafel */
+  .profil{
+    background:var(--karte);border:1px solid var(--linie);
+    border-top:3px solid var(--gold);
+    margin:32px 0 8px;
+  }
+  .profil-titel{
+    padding:20px 22px 16px;border-bottom:1px solid var(--linie);
+  }
+  .profil-titel .rolle{
+    font-family:'Cormorant Garamond',Georgia,serif;font-size:25px;color:var(--teal-tief);line-height:1.25;
+  }
+  .profil dl{margin:0;padding:6px 22px 18px;}
+  .zeile{display:flex;gap:14px;padding:11px 0;border-bottom:1px dotted var(--linie);}
+  .zeile:last-child{border-bottom:none;}
+  .zeile dt{
+    flex:0 0 118px;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--grau);font-weight:600;padding-top:3px;
+  }
+  .zeile dd{margin:0;flex:1;font-size:16.5px;}
+
+  ul{margin:0 0 18px;padding:0;list-style:none;}
+  li{position:relative;padding-left:22px;margin-bottom:11px;}
+  li::before{
+    content:"";position:absolute;left:2px;top:11px;
+    width:7px;height:7px;background:var(--gold);border-radius:50%;
+  }
+  li b{font-weight:600;color:var(--teal-tief);}
+
+  .liste-minus li::before{
+    content:"";width:9px;height:2px;background:#B9B2A8;border-radius:0;top:14px;
+  }
+
+  blockquote{
+    margin:26px 0;padding:2px 0 2px 20px;border-left:3px solid var(--gold);
+    font-family:'Cormorant Garamond',Georgia,serif;font-size:22px;font-style:italic;
+    line-height:1.45;color:var(--teal-tief);
+  }
+  blockquote cite{
+    display:block;font-family:'Inter',sans-serif;font-style:normal;font-size:12.5px;
+    letter-spacing:.08em;text-transform:uppercase;color:var(--grau);margin-top:10px;
+  }
+
+  .hinweis{
+    background:#F3EEE4;border:1px solid var(--linie);padding:16px 18px;
+    font-size:15px;color:var(--grau);margin:24px 0;
+  }
+  .hinweis b{color:var(--text);}
+
+  /* CTA */
+  .cta{
+    background:var(--teal);color:#fff;padding:34px 24px 30px;margin:44px 0 0;
+  }
+  .cta h2{color:#fff;margin-top:0;}
+  .cta h2 span{color:var(--gold);}
+  .cta p{color:rgba(255,255,255,.88);}
+  .btn{
+    display:block;text-align:center;text-decoration:none;
+    background:var(--gold);color:#1B1408;font-weight:600;
+    padding:16px 20px;margin:18px 0 0;border-radius:2px;font-size:16.5px;
+    transition:background .18s ease;
+  }
+  .btn:hover,.btn:focus{background:#D8A55A;}
+  .btn-sek{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45);font-weight:500;font-size:15.5px;}
+  .btn-sek:hover,.btn-sek:focus{background:rgba(255,255,255,.1);}
+  a:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
+  .btn-hinweis{text-align:center;font-size:13.5px;line-height:1.5;color:rgba(255,255,255,.72);margin:9px 0 0;}
+  .btn-hinweis + .btn{margin-top:22px;}
+  .fussnote{font-size:13px;color:rgba(255,255,255,.65);margin:14px 0 0;}
+
+  .signatur{margin:34px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-size:21px;color:var(--teal-tief);}
+
+  footer{
+    margin-top:48px;padding:24px 0 34px;border-top:1px solid var(--linie);
+    font-size:13.5px;color:var(--grau);text-align:center;
+  }
+  footer a{color:var(--grau);}
+
+  @media (max-width:520px){
+    h1{font-size:32px;}
+    h2{font-size:25px;}
+    .zeile{flex-direction:column;gap:2px;}
+    .zeile dt{flex:none;}
+    .cta{margin-left:-22px;margin-right:-22px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="marke">Wundervoll <b>erschaffen</b></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="eyebrow">Halal verdienen von zuhause</div>
+    <h1>Ein halal Einkommen – <em>ohne Büro, ohne Fremdbetreuung</em></h1>
+    <p class="sub">Du suchst eine Arbeit, bei der du dich nicht zwischen deinem Deen und deinem Einkommen entscheiden musst. Genau darum geht es hier.</p>
+  </section>
+
+  <p>Der Weg heißt Empfehlungsmarketing, und im Kern ist es Handel: Du empfiehlst ein nützliches Produkt, jemand kauft es über deinen Link, du bekommst einen Anteil vom Verkäufer. Was du empfiehlst, entscheidest allein du. Wichtig ist nur, dass du Produkte empfiehlst, die du selbst nützlich findest oder über die du dich gut informiert hast.</p>
+
+  <p>Den Rest beschreibe ich dir so, wie man eine Stelle beschreibt: Aufgaben, Rahmen, Anforderungen, Verdienst. Ohne Überredung, damit du in Ruhe prüfen kannst, ob das zu dir passt.</p>
+
+  <div class="profil">
+    <div class="profil-titel">
+      <div class="rolle">Selbstständige Empfehlerin<br>(Affiliate Marketing über Social Media)</div>
+    </div>
+    <dl>
+      <div class="zeile"><dt>Arbeitsort</dt><dd>Dein Zuhause. Ausschließlich.</dd></div>
+      <div class="zeile"><dt>Arbeitszeit</dt><dd>Frei einteilbar. Nach der Aufbauphase etwa 1 bis 2 Stunden täglich.</dd></div>
+      <div class="zeile"><dt>Beginn</dt><dd>Sofort möglich, in deinem Tempo.</dd></div>
+      <div class="zeile"><dt>Ausstattung</dt><dd>Handy und Internet. Mehr brauchst du am Anfang nicht.</dd></div>
+      <div class="zeile"><dt>Vorkenntnisse</dt><dd>Keine. Kein Studium, kein technisches Wissen, kein eigenes Produkt.</dd></div>
+      <div class="zeile"><dt>Vergütung</dt><dd>Rein leistungsabhängige Provisionen. Kein Festgehalt, keine Garantie.</dd></div>
+    </dl>
+  </div>
+
+  <h2><span>Der Rahmen</span>Warum dieser Weg zu deinem Alltag passt</h2>
+  <ul>
+    <li><b>Du arbeitest zuhause.</b> Kein Großraumbüro, keine gemischten Meetings, keine Dienstreise, keine Weihnachtsfeier, keine Situation, aus der du dich jedes Mal herausmanövrieren musst.</li>
+    <li><b>Deine Kinder bleiben bei dir.</b> Keine Fremdbetreuung, keine Übergabe an der Kita-Tür, kein Abholstress. Du arbeitest in den Lücken, die dein Tag ohnehin hat.</li>
+    <li><b>Deine Zeiten richten sich nach dir.</b> Gebetszeiten, Stillzeiten, Schulschluss, Ramadan. Du planst deine Arbeit um dein Leben herum, nicht umgekehrt.</li>
+    <li><b>Niemand redet über dein Auftreten.</b> Kein Gespräch über deinen Hijab, kein Dresscode, kein Rechtfertigen. Du zeigst dein Gesicht nur, wenn du willst – nötig ist es nicht.</li>
+    <li><b>Du entscheidest, was du empfiehlst.</b> Dir wird keine Branche und kein Produkt vorgesetzt. Du wählst jedes Produkt selbst aus und prüfst es selbst.</li>
+    <li><b>Was du verdienst, gehört dir.</b> Vollständig. Die Versorgungspflicht deines Mannes bleibt davon unberührt.</li>
+  </ul>
+
+  <blockquote>
+    „Den Männern ist ein Anteil von dem bestimmt, was sie erworben haben, und den Frauen ist ein Anteil von dem bestimmt, was sie erworben haben.“
+    <cite>Quran · Sure an-Nisa, 4:32</cite>
+  </blockquote>
+
+  <h2><span>Deine Aufgaben</span>Was du konkret tust</h2>
+  <ul>
+    <li>Ein Themenfeld wählen, das wirklich zu dir passt – Kochen, Handarbeit, Familienorganisation, Wissen über den Deen, was auch immer dein Bereich ist.</li>
+    <li>Beiträge erstellen, Bilder und Videos, auch komplett ohne dein Gesicht.</li>
+    <li>Reichweite aufbauen, nach einem System statt auf gut Glück.</li>
+    <li>Produkte empfehlen, die du selbst geprüft hast, und dafür Provision erhalten.</li>
+    <li>Automatisierungen einrichten, die Nachrichten beantworten, während du bei deinen Kindern bist.</li>
+  </ul>
+  <p>Falls dir Empfehlungsmarketing noch nichts sagt: Eine Autorin gibt 50 Prozent Provision auf ihr Ebook. Jemand kauft es für 20 Euro über deinen Link, 10 Euro davon gehören dir. Kein eigenes Produkt, kein Lager, kein Kundensupport.</p>
+
+  <h2><span>Dein Profil</span>Was du mitbringen musst</h2>
+  <ul>
+    <li><b>Disziplin.</b> Du bist deine eigene Chefin. Niemand kontrolliert dich außer dir selbst.</li>
+    <li><b>Lernbereitschaft.</b> Das System funktioniert, aber du musst es dir aneignen und umsetzen.</li>
+    <li><b>Ausdauer.</b> Die ersten Wochen bringen mehr Arbeit als Ergebnis. Das ist normal und genau hier hören die meisten auf.</li>
+    <li><b>Etwa 1 bis 2 Stunden täglich</b>, sobald du aktiv wirst. Zeit auf Instagram, ja – aber zum Arbeiten, nicht zum Scrollen.</li>
+  </ul>
+
+  <h2><span>Ehrlich gesagt</span>Was diese Stelle nicht ist</h2>
+  <ul class="liste-minus">
+    <li>Kein Festgehalt und kein garantiertes Einkommen. In den ersten Monaten kann es bei null bleiben.</li>
+    <li>Kein „nebenbei in zehn Minuten am Tag“.</li>
+    <li>Kein schnelles Geld. Wer dir das verspricht, verkauft dir etwas.</li>
+    <li>Kein kostenloser Einstieg: Wie dieses System funktioniert, lernst du in einem Kurs, und der ist eine Investition. Deshalb steht am Anfang der kostenlose Workshop. Dort siehst du, wie das Geschäftsmodell arbeitet, ob es überhaupt zu dir passt und welche Fähigkeiten der Kurs dir beibringt. Erst danach entscheidest du, ob du dafür investieren willst.</li>
+  </ul>
+
+  <div class="cta">
+    <h2><span>Der erste Schritt</span>Es gibt kein Bewerbungsgespräch</h2>
+    <p>Sondern einen kostenlosen Workshop, in dem Schritt für Schritt erklärt wird, wie Affiliate Marketing funktioniert. Schau ihn dir in Ruhe an, sprich mit deinem Mann darüber und entscheide ohne Druck.</p>
+    <a class="btn" href="https://www.the-affiliate-code.de/beweisvideo/?aff=naz-f2" rel="sponsored noopener" target="_blank">Zum kostenlosen Workshop*</a>
+    <p class="btn-hinweis">Lerne das Geschäftsmodell kennen und schau in Ruhe, ob es zu dir passt.</p>
+    <a class="btn btn-sek" href="https://www.the-affiliate-code.de/#aff=naz-f2&amp;cam=CAMPAIGNKEY" rel="sponsored noopener" target="_blank">Kurzinfo zum Kurs mit direkter Kaufmöglichkeit*</a>
+    <p class="btn-hinweis">Mit kurzer Videoerklärung zum Kurs.</p>
+    <p class="fussnote">*Empfehlungslinks (Werbung). Kaufst du darüber, erhalte ich eine Provision. Am Preis ändert sich für dich nichts.</p>
+  </div>
+
+  <p style="margin-top:28px;">Bei Fragen schreib mir jederzeit auf Instagram. Ich antworte dir persönlich.</p>
+  <p class="signatur">Deine Elif (auch bekannt: Naz)</p>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Wundervoll erschaffen ·
+    <a href="https://www.wundervoll-erschaffen.de/impressum.html">Impressum</a> ·
+    <a href="https://www.wundervoll-erschaffen.de/datenschutz.html">Datenschutz</a>
+  </div>
+</footer>
+
+</body>
+</html>
