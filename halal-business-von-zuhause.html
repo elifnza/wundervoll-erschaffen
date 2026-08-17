@@ -121,6 +121,32 @@
   }
   .hinweis b{color:var(--text);}
 
+  /* FAQ */
+  .faq{margin:8px 0 0;}
+  details{
+    background:var(--karte);border:1px solid var(--linie);
+    margin-bottom:10px;
+  }
+  details[open]{border-color:#D9CDB8;}
+  summary{
+    list-style:none;cursor:pointer;padding:15px 46px 15px 18px;position:relative;
+    font-weight:600;font-size:16.5px;color:var(--teal-tief);line-height:1.45;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"";position:absolute;right:18px;top:24px;
+    width:11px;height:11px;
+    border-right:2px solid var(--gold);border-bottom:2px solid var(--gold);
+    transform:rotate(45deg);transform-origin:70% 70%;
+    transition:transform .2s ease;
+  }
+  details[open] summary::after{transform:rotate(-135deg);}
+  summary:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;}
+  .antwort{padding:0 18px 18px;font-size:16px;color:#3B3833;}
+  .antwort p{margin:0 0 12px;}
+  .antwort p:last-child{margin-bottom:0;}
+  .quelle{font-size:13.5px;color:var(--grau);}
+
   /* CTA */
   .cta{
     background:var(--teal);color:#fff;padding:34px 24px 30px;margin:44px 0 0;
@@ -180,6 +206,8 @@
 
   <p>Eins vorweg: Dieses System setzt keine tausenden Follower voraus, und es geht niemals darum, Influencerin zu sein, dein Privatleben zu zeigen oder dein Gesicht in die Kamera zu halten. Es geht um Wissen, das du mit einem klaren System an deine gewünschte Zielgruppe weitergibst.</p>
 
+  <p>Der Bereich wächst gerade stark. Unternehmen verschieben ihre Werbebudgets zunehmend dorthin, 71 Prozent von ihnen zählen Empfehlungsmarketing 2026 zu ihren wichtigsten Umsatzkanälen, und am schnellsten wächst genau der Teil, der über soziale Medien läuft. Es ist damit eine der Tätigkeiten, die in den kommenden Jahren eher mehr als weniger gefragt sein wird.</p>
+
   <p>Den Rest beschreibe ich dir so, wie man eine Stelle beschreibt: Aufgaben, Rahmen, Anforderungen, Verdienst. Ohne Überredung, damit du in Ruhe prüfen kannst, ob das zu dir passt.</p>
 
   <div class="profil">
@@ -236,6 +264,130 @@
     <li>Kein schnelles Geld. Wer dir das verspricht, verkauft dir etwas.</li>
     <li>Kein kostenloser Einstieg: Wie dieses System funktioniert, lernst du in einem Kurs, und der ist eine Investition. Deshalb steht am Anfang der kostenlose Workshop. Dort siehst du, wie das Geschäftsmodell arbeitet, ob es überhaupt zu dir passt und welche Fähigkeiten der Kurs dir beibringt. Erst danach entscheidest du, ob du dafür investieren willst.</li>
   </ul>
+
+
+  <h2><span>Fragen</span>Was Schwestern mich am häufigsten fragen</h2>
+
+  <div class="faq">
+
+  <details>
+    <summary>Ist der Markt nicht längst voll?</summary>
+    <div class="antwort">
+      <p>Er wächst, statt sich zu füllen. 71 Prozent der werbenden Unternehmen zählen Empfehlungsmarketing 2026 zu ihren wichtigsten Umsatztreibern, 62 Prozent rechnen mit steigenden Umsätzen im Kanal, und 54 Prozent halten ihn selbst in wirtschaftlich schwierigen Zeiten für stabil. Weltweit gehen Analysten von rund 14 Prozent Wachstum pro Jahr aus.</p>
+      <p>Am stärksten wächst genau der Bereich, um den es hier geht: Empfehlungen über soziale Medien. Du baust dir also nichts auf, das in zwei Jahren wieder verschwunden ist.</p>
+      <p class="quelle">Quellen: Affiliate-Marketing Trend-Report 2026 (xpose360), Marktprognosen 2026</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Ist das nicht dasselbe wie Network Marketing oder ein Schneeballsystem?</summary>
+    <div class="antwort">
+      <p>Nein. Du wirbst keine Menschen an, die unter dir arbeiten, und dein Verdienst hängt an keiner Struktur unter dir. Du empfiehlst ein Produkt, jemand kauft es, du bekommst einen Anteil vom Verkäufer. Ein Verkauf, eine Provision. Wer nach dir kommt, spielt keine Rolle.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Ich habe kaum Follower. Geht das trotzdem?</summary>
+    <div class="antwort">
+      <p>Ja. Entscheidend ist nicht, wie viele Menschen dir folgen, sondern ob die richtigen dir folgen. Ein kleiner Kanal mit Frauen, die dir wirklich zuhören, bringt mehr als zehntausend Follower, die nur vorbeiscrollen.</p>
+      <p>Ganz ohne Reichweite geht es nicht, sie aufzubauen gehört zur Arbeit dazu. Aber du startest nicht mit einem Nachteil, wenn du bei null anfängst.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Muss ich mein Gesicht zeigen?</summary>
+    <div class="antwort">
+      <p>Nein. Es gibt Formate, die ganz ohne dein Gesicht funktionieren: nur deine Hände, Text, Bilder oder Stimme. Ich arbeite selbst so.</p>
+      <p>Sehr viele arbeiten inzwischen auch mit einem KI-Avatar, also einer künstlich erzeugten Person, die vor der Kamera steht statt dir. Das ist mittlerweile gängig und lässt sich im Kurs als Zusatzleistung dazubuchen.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Kann ich anonym arbeiten, ohne dass mein Umfeld es mitbekommt?</summary>
+    <div class="antwort">
+      <p>Weitgehend ja. Du kannst unter einem anderen Namen auftreten und dein Privatleben komplett heraushalten. Eine Ausnahme gibt es: Sobald du gewerblich tätig bist, brauchst du ein Impressum mit deinem Namen und deiner Adresse. Das ist gesetzlich vorgeschrieben und lässt sich nicht umgehen.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Ich kenne mich mit Technik nicht aus.</summary>
+    <div class="antwort">
+      <p>Du brauchst nichts zu programmieren und keine Website zu bauen. Wenn du eine Nachricht auf dem Handy tippen und ein Video aufnehmen kannst, reicht das für den Anfang. Alles Weitere wird dir Schritt für Schritt gezeigt.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Wie viel Zeit brauche ich am Tag?</summary>
+    <div class="antwort">
+      <p>Das hängt davon ab, wie schnell du aufbauen möchtest. Wenn es zügig gehen soll, sind es am Anfang mehr als ein bis zwei Stunden am Tag. Sobald alles sitzt, brauchst du nicht mehr als ein bis zwei Stunden.</p>
+      <p>Diese Zeit muss allerdings konzentriert sein. Nebenbei beim Kochen und mit halber Aufmerksamkeit funktioniert es nicht.</p>
+      <p>Wann du sie dir nimmst, entscheidest du. Viele Schwestern arbeiten während des Mittagsschlafs oder abends, wenn die Kinder im Bett sind.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Wann verdiene ich das erste Geld?</summary>
+    <div class="antwort">
+      <p>Das kann dir niemand seriös sagen, und wer dir eine Zahl nennt, verspricht dir etwas, das er nicht halten kann. Es hängt davon ab, wie viel du umsetzt, wie schnell du lernst und wie gut dein Thema zu deiner Zielgruppe passt.</p>
+      <p>Was ich dir sagen kann: In den ersten Wochen wirst du mehr arbeiten, als du verdienst. Genau daran scheitern die meisten. Nicht am System, sondern an dieser Phase.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Welche Produkte empfehle ich denn?</summary>
+    <div class="antwort">
+      <p>Das entscheidest du. Es gibt Empfehlungsprogramme für fast jeden Bereich, von Haushalt über Bücher bis zu digitalen Produkten. Meine Regel: Empfiehl nur, was du selbst gerne nutzt oder worüber du dich gut informiert hast, und was den Menschen wirklich nützt.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Muss ich Ware einkaufen oder lagern?</summary>
+    <div class="antwort">
+      <p>Nein. Du verschickst nichts und übernimmst keinen Kundenservice. Der Verkäufer wickelt alles ab, du bekommst deinen Anteil.</p>
+      <p>Wenn du ein Produkt vor der Empfehlung selbst ausprobieren möchtest, kannst du es natürlich kaufen. Ein Lager brauchst du dafür nicht, und verpflichtet bist du zu nichts.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Muss ich ein Gewerbe anmelden?</summary>
+    <div class="antwort">
+      <p>Ja, sobald du regelmäßig Einnahmen erzielst. Die Anmeldung kostet je nach Gemeinde etwa 20 bis 60 Euro und geht vielerorts online. Für die Steuer gibt es die Kleinunternehmerregelung, solange du unter bestimmten Grenzen bleibst.</p>
+      <p>Ich bin keine Steuerberaterin. Für deine konkrete Situation frag bitte deine Gemeinde oder einen Steuerberater.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Ich bin in Elternzeit. Geht das überhaupt?</summary>
+    <div class="antwort">
+      <p>Selbstständige Nebentätigkeiten sind in der Elternzeit bis zu einer bestimmten Wochenstundenzahl möglich. Einkommen kann allerdings auf dein Elterngeld angerechnet werden.</p>
+      <p>Das ist von Fall zu Fall verschieden, deshalb kläre es bitte vorher mit deiner Elterngeldstelle. Ich habe selbst in der Elternzeit angefangen.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Was kostet der Kurs?</summary>
+    <div class="antwort">
+      <p>397 Euro. Wenn du das nicht auf einmal zahlen möchtest, gibt es eine Ratenzahlung ab 35 Euro im Monat.</p>
+      <p>Im kostenlosen Workshop siehst du vorher in Ruhe, was enthalten ist, und entscheidest erst danach.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Was passiert, wenn ich auf den Workshop klicke?</summary>
+    <div class="antwort">
+      <p>Du trägst deine E-Mail-Adresse ein und bekommst damit Zugang zum Workshop, in dem dir das Geschäftsmodell erklärt wird. Kein Anruf, kein Verkaufsgespräch, kein Druck.</p>
+      <p>Du siehst dir das in Ruhe an und entscheidest danach, ob es zu dir passt.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Kann ich dich fragen, wenn ich nicht weiterkomme?</summary>
+    <div class="antwort">
+      <p>Ja. Schreib mir auf Instagram, ich antworte dir persönlich. Auch dann, wenn du dich am Ende gegen den Kurs entscheidest.</p>
+    </div>
+  </details>
+
+  </div>
 
   <div class="cta">
     <h2><span>Der erste Schritt</span>Es gibt kein Bewerbungsgespräch</h2>
