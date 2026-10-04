@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Halal Einkommen von zu Hause aufbauen | Wundervoll erschaffen</title>
-<meta name="description" content="Ein halal Einkommen von zu Hause, ohne Büro und ohne Fremdbetreuung. Hier steht ehrlich, wie dieser Weg aussieht.">
-<meta name="theme-color" content="#FBF4EA">
+<meta name="description" content="Ein halal Einkommen von zu Hause, ohne Büro und ohne Fremdbetreuung. Hier steht, wie dieser Weg aussieht.">
+<meta name="theme-color" content="#1B4F5A">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Wundervoll erschaffen">
 <meta property="og:url" content="https://www.wundervoll-erschaffen.de/halal-business-von-zuhause.html">
 <meta property="og:title" content="Ein halal Einkommen von zu Hause aufbauen">
-<meta property="og:description" content="Ohne Büro, ohne Fremdbetreuung, ohne dein Gesicht zu zeigen. Hier steht ehrlich, wie dieser Weg aussieht.">
+<meta property="og:description" content="Ohne Büro, ohne Fremdbetreuung, ohne dein Gesicht zu zeigen. Hier steht, wie dieser Weg aussieht.">
 <meta property="og:image" content="https://www.wundervoll-erschaffen.de/og-halal-business.jpg?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -22,13 +22,15 @@
 <meta name="twitter:image" content="https://www.wundervoll-erschaffen.de/og-halal-business.jpg?v=2">
 <style>
   :root {
-    --cream: #FBF4EA;
-    --beige: #F2E6D5;
-    --line: #E3CFB6;
-    --orange: #B4531F;
-    --orange-light: #E7A277;
-    --ink: #3B2A20;
-    --ink-muted: #7A6250;
+    --paper: #FBF8F3;
+    --card: #FFFFFF;
+    --line: #E4DCCF;
+    --teal: #1B4F5A;
+    --teal-deep: #12363E;
+    --gold: #C5944A;
+    --gold-soft: #E2C38F;
+    --ink: #2C2A27;
+    --ink-muted: #6B6660;
     --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
     --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     box-sizing: border-box;
@@ -36,11 +38,11 @@
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
   *, *::before, *::after { box-sizing: inherit; margin: 0; padding: 0; }
-  html { background: var(--cream); scroll-behavior: smooth; scroll-padding-top: env(safe-area-inset-top, 0px); }
+  html { background: var(--paper); scroll-padding-top: env(safe-area-inset-top, 0px); }
   body {
     background:
-      radial-gradient(ellipse 90% 30% at 50% 0%, rgba(231,162,119,0.22), transparent 70%),
-      var(--cream);
+      radial-gradient(ellipse 90% 30% at 50% 0%, rgba(197,148,74,0.14), transparent 70%),
+      var(--paper);
     color: var(--ink);
     font-family: var(--sans);
     font-size: 17px;
@@ -57,7 +59,7 @@
   .brand {
     font-family: var(--serif);
     font-size: 17px;
-    color: var(--orange);
+    color: var(--teal);
     text-align: center;
   }
 
@@ -65,6 +67,7 @@
     font-family: var(--serif);
     font-weight: 400;
     line-height: 1.15;
+    color: var(--teal-deep);
   }
   h1 { font-size: 38px; margin-top: 36px; }
   h2 { font-size: 29px; }
@@ -75,34 +78,31 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    background: var(--orange);
-    color: #FFF8EF;
+    background: var(--teal);
+    color: #fff;
     font-weight: 600;
     font-size: 18px;
     border-radius: 16px;
     padding: 18px 20px;
     transition: background-color 150ms ease, transform 150ms ease;
   }
-  .btn:hover { background: #9E4718; }
+  .btn:hover { background: var(--teal-deep); }
   .btn:active { transform: scale(.985); }
   .btn-note { margin-top: 10px; text-align: center; font-size: 14px; color: var(--ink-muted); }
 
-  /* Stellenanzeige */
+  /* Stellenbeschreibung */
   .job {
     margin-top: 32px;
-    background: var(--beige);
+    background: var(--card);
     border: 1px solid var(--line);
+    border-top: 3px solid var(--gold);
     border-radius: 18px;
     padding: 26px 22px 10px;
   }
   .job h2 { font-size: 26px; }
-  .job-sub { margin-top: 4px; font-size: 15px; color: var(--ink-muted); }
   .job dl { margin-top: 18px; }
-  .job-row {
-    padding: 14px 0;
-    border-top: 1px solid var(--line);
-  }
-  .job dt { font-weight: 600; font-size: 15px; color: var(--orange); }
+  .job-row { padding: 14px 0; border-top: 1px solid var(--line); }
+  .job dt { font-weight: 600; font-size: 15px; color: var(--teal); }
   .job dd { margin-top: 2px; font-size: 16px; }
   .job + .btn { margin-top: 22px; }
 
@@ -121,22 +121,10 @@
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: var(--orange-light);
+    background: var(--gold);
   }
-  .points strong { display: block; font-size: 18px; }
+  .points strong { display: block; font-size: 18px; color: var(--teal-deep); }
   .points span { display: block; margin-top: 4px; color: var(--ink-muted); font-size: 16px; }
-
-  .verse {
-    margin-top: 56px;
-    text-align: center;
-    padding: 0 6px;
-  }
-  .verse blockquote {
-    font-family: var(--serif);
-    font-size: 22px;
-    line-height: 1.45;
-  }
-  .verse figcaption { margin-top: 12px; font-size: 14px; color: var(--orange); }
 
   /* Wer ich bin */
   .me { text-align: center; }
@@ -150,7 +138,7 @@
     content: "";
     position: absolute;
     inset: -9px;
-    border: 1.5px solid var(--orange-light);
+    border: 1.5px solid var(--gold);
     border-radius: 999px 999px 14px 14px;
   }
   .arch img {
@@ -161,7 +149,7 @@
     object-fit: cover;
     border-radius: 999px 999px 10px 10px;
     display: block;
-    background: var(--beige);
+    background: var(--line);
   }
   .avatar-note {
     position: absolute;
@@ -171,47 +159,36 @@
     white-space: nowrap;
     font-size: 13px;
     font-weight: 600;
-    background: rgba(251,244,234,.88);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border: 1px solid var(--orange-light);
+    color: #fff;
+    background: var(--teal);
     border-radius: 999px;
     padding: 4px 13px;
   }
   .me p { margin-top: 14px; text-align: left; }
 
-  /* Nicht allein */
-  .support {
-    padding: 24px 22px;
-    border-left: 3px solid var(--orange);
-    background: linear-gradient(90deg, rgba(231,162,119,.18), transparent);
-    border-radius: 0 16px 16px 0;
-  }
-  .support h2 { font-size: 26px; color: var(--orange); }
-  .support p { margin-top: 10px; }
-
-  /* Überleitung */
-  .bridge {
-    background: var(--beige);
-    border: 1.5px solid var(--orange-light);
+  /* Erster Schritt */
+  .cta {
+    background: var(--teal-deep);
+    color: #F3EEE6;
     border-radius: 20px;
-    padding: 28px 22px;
+    padding: 30px 22px;
   }
-  .bridge p { margin-top: 12px; }
-  .bridge .btn { margin-top: 24px; }
-  .after {
-    margin-top: 26px;
-    padding-top: 20px;
-    border-top: 1px solid var(--line);
-    font-size: 16px;
+  .cta h2 { color: #fff; }
+  .cta p { margin-top: 12px; }
+  .cta .btn {
+    margin-top: 24px;
+    background: var(--gold);
+    color: var(--teal-deep);
   }
-  .after a { color: var(--orange); font-weight: 600; }
+  .cta .btn:hover { background: var(--gold-soft); }
+  .cta .btn-note { color: #C9D3D3; }
 
+  .questions { margin-top: 32px; }
   .sign {
-    margin-top: 40px;
-    text-align: center;
+    margin-top: 24px;
     font-family: var(--serif);
     font-size: 20px;
+    color: var(--teal-deep);
   }
 
   footer {
@@ -224,9 +201,8 @@
   footer nav { margin-top: 8px; display: flex; justify-content: center; gap: 18px; }
   footer a { color: var(--ink-muted); }
 
-  a:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
     .btn { transition: none; }
   }
 </style>
@@ -237,37 +213,23 @@
   <p class="brand">Wundervoll erschaffen</p>
 
   <header>
-    <h1>Ein halal Einkommen von zu Hause. Ohne Büro, ohne Fremdbetreuung.</h1>
-    <p class="lead">Du suchst einen Weg, bei dem du dich nicht zwischen deinem Deen und deinem Einkommen entscheiden musst. Hier steht ehrlich, wie dieser Weg aussieht.</p>
+    <h1>Ein halal Einkommen. Ohne Büro, ohne Fremdbetreuung.</h1>
+    <p class="lead">Du suchst eine Arbeit, bei der du dich nicht zwischen deinem Deen und deinem Einkommen entscheiden musst. Hier steht, wie dieser Weg aussieht, beschrieben wie eine Stelle.</p>
   </header>
 
   <div class="job">
-    <h2>Kein Job, sondern dein eigenes Business</h2>
-    <p class="job-sub">Selbstständiges Online-Business von zu Hause</p>
+    <h2>Selbstständiges Online-Business von zu Hause</h2>
     <dl>
-      <div class="job-row">
-        <dt>Was du tust</dt>
-        <dd>Du empfiehlst über Social Media Produkte, die du selbst geprüft hast, und bekommst dafür eine großzügige Provision. Das nennt sich Affiliate Marketing.</dd>
-      </div>
-      <div class="job-row">
-        <dt>Arbeitsort</dt>
-        <dd>Dein Zuhause. Ausschließlich.</dd>
-      </div>
-      <div class="job-row">
-        <dt>Arbeitszeit</dt>
-        <dd>Frei einteilbar, ein bis zwei Stunden täglich. Wenn es schneller gehen soll, am Anfang mehr.</dd>
-      </div>
-      <div class="job-row">
-        <dt>Beginn</dt>
-        <dd>Sofort möglich, in deinem Tempo.</dd>
-      </div>
-      <div class="job-row">
-        <dt>Vorkenntnisse</dt>
-        <dd>Keine. Kein Studium, kein technisches Wissen, kein eigenes Produkt.</dd>
-      </div>
+      <div class="job-row"><dt>Arbeitsort</dt><dd>Dein Zuhause. Ausschließlich.</dd></div>
+      <div class="job-row"><dt>Arbeitszeit</dt><dd>Frei einteilbar, ein bis zwei Stunden täglich. Wenn es schneller gehen soll, am Anfang mehr.</dd></div>
+      <div class="job-row"><dt>Beginn</dt><dd>Sofort möglich, in deinem Tempo.</dd></div>
+      <div class="job-row"><dt>Ausstattung</dt><dd>Handy und Internet. Mehr brauchst du am Anfang nicht.</dd></div>
+      <div class="job-row"><dt>Sichtbarkeit</dt><dd>Ohne Gesicht möglich. Du zeigst dich nur, wenn du willst.</dd></div>
+      <div class="job-row"><dt>Vorkenntnisse</dt><dd>Keine. Kein Studium, kein technisches Wissen, kein eigenes Produkt.</dd></div>
     </dl>
   </div>
-  <a class="btn" href="#workshop">Zum kostenlosen Workshop</a>
+  <a class="btn" href="https://www.the-affiliate-code.de/beweisvideo/?aff=naz-f2&amp;cam=fitrahauthalal" target="_blank" rel="sponsored noopener">Zum kostenlosen Workshop</a>
+  <p class="btn-note">Kostenlos und unverbindlich.</p>
 
   <section>
     <h2>Warum dieser Weg zu deinen islamischen Werten passt</h2>
@@ -289,25 +251,17 @@
     </div>
     <h2>Wer ich bin</h2>
     <p>Ich bin Elif, Ingenieurin und Mama von zwei Kindern. Nach meiner Elternzeit habe ich mich bewusst dagegen entschieden, wieder in Vollzeit in meinem Job zu arbeiten, solange meine Kinder noch so klein sind. Ich habe lange gesucht und viel Dua gemacht, bis ich diesen Weg gefunden habe.</p>
-    <p>Mir war immer wichtig, mein Gesicht nicht zu zeigen, und genau das habe ich mit diesem Business geschafft. Ich muss niemanden anschreiben, wer Interesse hat, meldet sich von selbst.</p>
+    <p>Mir war immer wichtig, mein Gesicht nicht zu zeigen, und genau das habe ich mit diesem Business geschafft. Ich muss niemanden anschreiben, wer Interesse hat, meldet sich von selbst. Deshalb steht diese Seite hier.</p>
   </section>
 
-  <section class="support">
-    <h2>Du startest nicht allein</h2>
-    <p>Wenn du über mich einsteigst, kommst du in meine Telegram-Gruppe. Dort unterstütze ich dich, beantworte deine Fragen und wir bauen gemeinsam.</p>
-    <p>Außerdem zeige ich dir dort kostenlos, wie du deinen ersten einfachen KI-Avatar und deine ersten KI-Kurzvideos erstellst.</p>
-  </section>
-
-  <section class="bridge" id="workshop">
-    <h2>Bevor du auf den Button klickst</h2>
-    <p>Der Workshop ist nicht von mir. Er ist von The Affiliate Code, dem Kurs, mit dem ich selbst alles gelernt habe. Dort spricht Marek Rühl, deshalb siehst du ihn und nicht mich.</p>
-    <p>Im kostenlosen Workshop lernst du, wie du an deine eigenen Affiliate-Links kommst. Außerdem erklärt dir Marek sein PVA-System, mit dem du schon mit kurzen Instagram-Reels große Reichweite bekommen kannst. Danach kannst du direkt selbst damit anfangen, ohne etwas kaufen zu müssen. Wer später mehr will und größer werden möchte, bekommt am Ende einen Kurs mit einem kompletten Fahrplan vorgestellt.</p>
-    <p>Und danach bist du wieder bei mir: Wenn du über mich einsteigst, begleite ich dich persönlich in meiner Telegram-Gruppe 🤎</p>
+  <section class="cta">
+    <h2>Es gibt kein Bewerbungsgespräch</h2>
+    <p>Wie dieses Modell genau funktioniert, wird dir in einem kostenlosen Workshop Schritt für Schritt gezeigt. Du schaust ihn dir in Ruhe an und entscheidest danach, ob er zu dir passt.</p>
     <a class="btn" href="https://www.the-affiliate-code.de/beweisvideo/?aff=naz-f2&amp;cam=fitrahauthalal" target="_blank" rel="sponsored noopener">Zum kostenlosen Workshop</a>
-    <p class="btn-note">Kostenlos und unverbindlich.</p>
-    <p class="after">Hast du den Workshop angeschaut? <a href="https://ig.me/m/succeeding.halal" target="_blank" rel="noopener">Schreib mir auf Instagram</a>, was du denkst. Ich beantworte dir alle Fragen persönlich.</p>
+    <p class="btn-note">Dort siehst du, wie dieses System funktioniert.</p>
   </section>
 
+  <p class="questions">Bei Fragen schreib mir jederzeit auf Instagram. Ich antworte dir persönlich.</p>
   <p class="sign">Deine Elif (auch bekannt: Naz)</p>
 
   <footer>
